@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SchemaInterface } from 'src/app/interfaces/schema.interface';
+import { SchemasService } from 'src/app/services/schemas/schemas.service';
 
 @Component({
   selector: 'app-three-two-shared-schema',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class ThreeTwoSharedSchemaComponent {
 
+  constructor(private _schemaService: SchemasService) { }
+  
+  schemaWholeData: SchemaInterface[] = [];
+
+  ngOnInit(): void{
+    this._schemaService.getSchemaData().subscribe((response: SchemaInterface[]) => {
+      this.schemaWholeData = response;
+    })
+  }
+  
 }
