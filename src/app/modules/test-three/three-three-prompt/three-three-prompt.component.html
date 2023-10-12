@@ -47,3 +47,81 @@
         </div>
     </div>
 </div>
+
+<!-- prompt form -->
+<div class="form-container container pb-5">
+    <form (ngSubmit)="onPromptSubmit()" [formGroup]="promptForm">
+        <!-- Label and Input for Prompt Name -->
+        <div class="row pb-2">
+            <div class="col-12 col-md-3">
+                <div class="label fw-medium">Prompt Name:</div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="inputbox">
+                    <input type="text" class="form-control" placeholder="Enter Prompt Name"
+                        formControlName="promptName" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Label and Input for Schema Name -->
+        <div class="row pb-2">
+            <div class="col-12 col-md-3">
+                <div class="label fw-medium">Select Schema:</div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="inputbox">
+                    <!-- Include the component responsible for selecting schemas here -->
+                    <app-three-two-shared-schema></app-three-two-shared-schema>
+                </div>
+            </div>
+        </div>
+
+        <!-- Label and Textarea for System Message -->
+        <div class="row pb-2">
+            <div class="col-12 col-md-3">
+                <div class="label fw-medium">System Message:</div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="inputbox">
+                    <textarea class="form-control" placeholder="Enter System Message" style="height: 100px"
+                        formControlName="systemMessage" appTextareaAutoResize></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Label and Textarea for Human Message -->
+        <div class="row pb-2">
+            <div class="col-12 col-md-3">
+                <div class="label fw-medium">Human Message:</div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="inputbox">
+                    <textarea class="form-control" placeholder="Enter Human Message" formControlName="humanMessage"
+                        appTextareaAutoResize></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Label and Textarea for Input Variables -->
+        <div class="row pb-2">
+            <div class="col-12 col-md-3">
+                <div class="label fw-medium">Input Variables:</div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="inputbox">
+                    <textarea class="form-control" placeholder="Enter Input Variables" formControlName="inputVariables"
+                        appTextareaAutoResize></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submit-button d-flex justify-content-center gap-3">
+            <button type="submit" class="btn btn-success">
+                Submit
+            </button>
+
+        </div>
+    </form>
+</div>
