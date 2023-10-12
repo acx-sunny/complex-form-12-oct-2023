@@ -1,202 +1,512 @@
 {
-  "schemas": [
+  "documents": [
     {
-      "id": "schema20231012-115826",
-      "name": "fsdfsfsfd",
+      "id": "document1696851596039",
+      "name": "Cancellation_Request",
       "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T06:28:26.539Z",
-      "schemaData": [
-        {
-          "attribute": "fdsfs",
-          "description": "fsdfs",
-          "isUiSchema": true,
-          "uiType": "form"
-        }
-      ]
+      "creationDate": "2023-10-09T11:40:28.610Z",
+      "phraseMatcher": "cancellation request",
+      "description": "is a document related to cancelling the policy, it is also called as policy release",
+      "documentType": {
+        "isText": true,
+        "isForm": true,
+        "isTable": false
+      }
     },
     {
-      "id": "schema20231012-115850",
+      "id": "document1696851630370",
+      "name": "Insurance_Application",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-09T11:40:55.690Z",
+      "phraseMatcher": "Insurance Application",
+      "description": "\"is a document is related to Insurance Application for following products: \",\n    \"    Homeowners Insurance\",\n    \"    Dwelling Fire Insurance\",\n    \"    Unit Owners Insurance\",\n    \"    Renters Insurance\",\n    \"    Company Renters Insurance,\",\n    \"    Street Legal Motorcycle Insurance\",\n    \"    Unit Owners Insurance\",\n    \"the document will also contain of details related to Binding Procedures, Applicants Statement and Underwriting acknowledgement\"",
+      "documentType": {
+        "isText": true,
+        "isForm": false,
+        "isTable": false
+      }
+    },
+    {
+      "id": "document1696851658110",
+      "name": "Mortgage_Endoresement",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-09T11:41:19.099Z",
+      "phraseMatcher": "",
+      "description": " \"is s document from mortgage company to update mortgage company details in the insurance policy. It will have the Mortgagee Company Information, Loan Number, Policy Number and Property Address \"",
+      "documentType": {
+        "isText": true,
+        "isForm": false,
+        "isTable": true
+      }
+    },
+    {
+      "id": "document1696995855165",
+      "name": "Claim Document",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-11T03:44:58.371Z",
+      "phraseMatcher": "claim, insurance",
+      "description": "This document talks about the claim settlement of the insurance.",
+      "documentType": {
+        "isText": true,
+        "isForm": true,
+        "isTable": false
+      }
+    },
+    {
+      "id": "document1696996540410",
+      "name": "new doc schema",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-11T03:55:55.290Z",
+      "phraseMatcher": "fdfdg",
+      "description": "ggdfgdg",
+      "documentType": {
+        "isText": true,
+        "isForm": false,
+        "isTable": false
+      }
+    },
+    {
+      "id": "document1696996669930",
+      "name": "schema test",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-11T03:58:11.269Z",
+      "phraseMatcher": "dsfs",
+      "description": "fsfs",
+      "documentType": {
+        "isText": true,
+        "isForm": false,
+        "isTable": false
+      }
+    },
+    {
+      "id": "document1696996728468",
       "name": "fsfs",
       "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T06:28:50.437Z",
+      "creationDate": "2023-10-11T03:58:55.786Z",
+      "phraseMatcher": "fsfs",
+      "description": "fsfs",
+      "documentType": {
+        "isText": true,
+        "isForm": false,
+        "isTable": false
+      }
+    },
+    {
+      "id": "document1696996839856",
+      "name": "dasda",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-11T04:00:47.266Z",
+      "phraseMatcher": "dada",
+      "description": "dada",
+      "documentType": {
+        "isText": true,
+        "isForm": false,
+        "isTable": false
+      }
+    },
+    {
+      "id": "document1697000515762",
+      "name": "hdfhjdh",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-11T05:08:42.870Z",
+      "phraseMatcher": "fhjsf",
+      "description": "fdhgfs",
+      "documentType": {
+        "isText": false,
+        "isForm": true,
+        "isTable": false
+      }
+    },
+    {
+      "id": "document1697008710968",
+      "name": "",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-11T07:18:35.905Z",
+      "phraseMatcher": "",
+      "description": "",
+      "documentType": {
+        "isText": false,
+        "isForm": false,
+        "isTable": false
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "id": "schema1696851760803",
+      "name": "Cancellation_Request_Schema",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-09T11:44:15.333Z",
       "schemaData": [
         {
-          "attribute": "fsfd",
-          "description": "dsfsd",
+          "attribute": "PolicyNumber",
+          "description": "This is a Policy Number",
           "isUiSchema": true,
-          "uiType": "form"
+          "uiType": "textbox"
         },
         {
-          "attribute": "fsfd",
-          "description": "dfsfs",
+          "attribute": "PolicyEffectiveDate",
+          "description": "Policy Effective Date in YYYY/MM/DD format",
           "isUiSchema": true,
-          "uiType": "form"
+          "uiType": "textbox"
         },
         {
-          "attribute": "fsdfs",
-          "description": "dsfd",
+          "attribute": "PolicyExpirationDate",
+          "description": "",
           "isUiSchema": true,
           "uiType": "table"
         },
         {
-          "attribute": "dfsd",
-          "description": "fsfs",
-          "isUiSchema": false,
-          "uiType": "Select UI Schema"
-        }
-      ]
-    },
-    {
-      "id": "schema20231012-121153",
-      "name": "fdsfs",
-      "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T06:41:53.989Z",
-      "schemaData": [
+          "attribute": "PolicyExpirationDate",
+          "description": "Policy Expiration Date in YYYY/MM/DD format",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        },
         {
-          "attribute": "fsd",
-          "description": "fsdfs",
+          "attribute": "CancellationDate",
+          "description": "Cancellation Date in which the policy should be cancelled",
           "isUiSchema": true,
           "uiType": "form"
         },
         {
-          "attribute": "fsdfs",
-          "description": "fsfs",
+          "attribute": "Producer",
+          "description": "Producer name and address",
+          "isUiSchema": false,
+          "uiType": "Select UI Schema"
+        },
+        {
+          "attribute": "InsuredName",
+          "description": "Insured Person Name",
           "isUiSchema": true,
           "uiType": "textbox"
         }
       ]
     },
     {
-      "id": "schema20231012-123938",
-      "name": "fdsf",
+      "id": "schema1696851858054",
+      "name": "Insurance_Application_Schema",
       "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T07:09:38.636Z",
+      "creationDate": "2023-10-09T11:46:55.417Z",
       "schemaData": [
         {
-          "attribute": "fs",
-          "description": "fsd",
+          "attribute": "PolicyNumber",
+          "description": "This is a Policy Number.  It is a 10 Digit Number with hypen. This is different from Claims Number, Loan Number and Quote Number",
+          "isUiSchema": true,
+          "uiType": "table"
+        },
+        {
+          "attribute": "PolicyType",
+          "description": "The Product Name or Type",
+          "isUiSchema": true,
+          "uiType": "form"
+        },
+        {
+          "attribute": "PolicyEffectiveDate",
+          "description": "Policy Effective Date in YYYY/MM/DD format",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        },
+        {
+          "attribute": "PolicyExpirationDate",
+          "description": "Policy Expiration Date in YYYY/MM/DD format",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        },
+        {
+          "attribute": "PropertyAddress",
+          "description": "The address of the property associated with the insurance policy",
+          "isUiSchema": true,
+          "uiType": "form"
+        },
+        {
+          "attribute": "VIN",
+          "description": "Vehicle Identification Number",
+          "isUiSchema": false,
+          "uiType": "table"
+        },
+        {
+          "attribute": "GaragingAddress",
+          "description": "The address where the vehicle is parked",
+          "isUiSchema": false,
+          "uiType": "table"
+        },
+        {
+          "attribute": "ProducerCode",
+          "description": "Producer Code",
+          "isUiSchema": true,
+          "uiType": "form"
+        },
+        {
+          "attribute": "ProducerName",
+          "description": "Producer Name",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        },
+        {
+          "attribute": "InsuredName",
+          "description": "Insured Person Name\"",
           "isUiSchema": true,
           "uiType": "textbox"
         }
       ]
     },
     {
-      "id": "schema20231012-123939",
-      "name": "fdsf",
+      "id": "schema1696852086165",
+      "name": "Mortgage_Details_Schema",
       "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T07:09:39.467Z",
+      "creationDate": "2023-10-09T11:49:05.945Z",
       "schemaData": [
         {
-          "attribute": "fs",
-          "description": "fsd",
+          "attribute": "MortgageCompanyName",
+          "description": "Lender or Mortgage Company Name",
           "isUiSchema": true,
           "uiType": "textbox"
+        },
+        {
+          "attribute": "MortgageCompanyAddress",
+          "description": "Mortgage Company Address",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        },
+        {
+          "attribute": "PolicyEffectiveDate",
+          "description": "Policy Effective Date in YYYY/MM/DD format",
+          "isUiSchema": true,
+          "uiType": "table"
         }
       ]
     },
     {
-      "id": "schema20231012-123941",
-      "name": "fdsf",
+      "id": "schema1696852147863",
+      "name": "Mortgage_Endorsement",
       "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T07:09:41.266Z",
+      "creationDate": "2023-10-09T11:50:05.267Z",
       "schemaData": [
         {
-          "attribute": "fs",
-          "description": "fsd",
+          "attribute": "PolicyNumber",
+          "description": "This is a Policy Number",
           "isUiSchema": true,
           "uiType": "textbox"
+        },
+        {
+          "attribute": "LoanNumber",
+          "description": "LoanNumber",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        },
+        {
+          "attribute": "CustomerName",
+          "description": "Customer Name",
+          "isUiSchema": true,
+          "uiType": "form"
+        },
+        {
+          "attribute": "CustomerAddress",
+          "description": "Customer Address",
+          "isUiSchema": true,
+          "uiType": "table"
         }
       ]
     },
     {
-      "id": "schema20231012-123942",
-      "name": "fdsf",
+      "id": "schema1696852206730",
+      "name": "Signature_Details_Schema",
       "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T07:09:42.153Z",
+      "creationDate": "2023-10-09T11:50:55.114Z",
       "schemaData": [
         {
-          "attribute": "fs",
-          "description": "fsd",
+          "attribute": "Signed",
+          "description": "Say YES  if found the sign , else say NO",
           "isUiSchema": true,
           "uiType": "textbox"
+        },
+        {
+          "attribute": "SignedDate",
+          "description": "Signed date in YYYY/MM/DD forma",
+          "isUiSchema": true,
+          "uiType": "form"
+        },
+        {
+          "attribute": "SignedBy",
+          "description": "Insurer who signed the application",
+          "isUiSchema": true,
+          "uiType": "table"
         }
       ]
     },
     {
-      "id": "schema20231012-123943",
-      "name": "fdsf",
+      "id": "schema1696996580343",
+      "name": "gdfgdfg",
       "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T07:09:43.715Z",
+      "creationDate": "2023-10-11T03:56:41.434Z",
       "schemaData": [
         {
-          "attribute": "fs",
-          "description": "fsd",
+          "attribute": "gdfgd",
+          "description": "gdgd",
           "isUiSchema": true,
           "uiType": "textbox"
+        },
+        {
+          "attribute": "gdfdg",
+          "description": "dfgdgd",
+          "isUiSchema": true,
+          "uiType": "form"
         }
       ]
     },
     {
-      "id": "schema20231012-123944",
-      "name": "fdsf",
+      "id": "schema1696996847289",
+      "name": "dasda",
       "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T07:09:44.580Z",
+      "creationDate": "2023-10-11T04:01:00.900Z",
       "schemaData": [
         {
-          "attribute": "fs",
-          "description": "fsd",
+          "attribute": "PolicyNumber",
+          "description": "This is a Policy Number",
           "isUiSchema": true,
           "uiType": "textbox"
-        }
-      ]
-    },
-    {
-      "id": "schema20231012-123945",
-      "name": "fdsf",
-      "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T07:09:45.842Z",
-      "schemaData": [
+        },
         {
-          "attribute": "fs",
-          "description": "fsd",
+          "attribute": "PolicyEffectiveDate",
+          "description": "Policy Effective Date in YYYY/MM/DD format",
           "isUiSchema": true,
           "uiType": "textbox"
-        }
-      ]
-    },
-    {
-      "id": "schema20231012-123946",
-      "name": "fdsf",
-      "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T07:09:46.635Z",
-      "schemaData": [
+        },
         {
-          "attribute": "fs",
-          "description": "fsd",
-          "isUiSchema": true,
-          "uiType": "textbox"
-        }
-      ]
-    },
-    {
-      "id": "schema20231012-124535",
-      "name": "",
-      "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T07:15:35.227Z",
-      "schemaData": [
-        {
-          "attribute": "",
+          "attribute": "PolicyExpirationDate",
           "description": "",
+          "isUiSchema": true,
+          "uiType": "table"
+        },
+        {
+          "attribute": "CancellationDate",
+          "description": "Cancellation Date in which the policy should be cancelled",
+          "isUiSchema": true,
+          "uiType": "form"
+        },
+        {
+          "attribute": "Producer",
+          "description": "Producer name and address",
+          "isUiSchema": false,
+          "uiType": "Select UI Schema"
+        },
+        {
+          "attribute": "InsuredName",
+          "description": "Insured Person Name",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        },
+        {
+          "attribute": "dadsa",
+          "description": "dasda",
+          "isUiSchema": false,
+          "uiType": "Select UI Schema"
+        },
+        {
+          "attribute": "dasad",
+          "description": "sdada",
+          "isUiSchema": false,
+          "uiType": "Select UI Schema"
+        },
+        {
+          "attribute": "dada",
+          "description": "dada",
+          "isUiSchema": false,
+          "uiType": "Select UI Schema"
+        },
+        {
+          "attribute": "dasda",
+          "description": "dada",
           "isUiSchema": false,
           "uiType": "Select UI Schema"
         }
       ]
     },
     {
-      "id": "schema20231012-124536",
+      "id": "schema1697000922919",
+      "name": "hdfhjdh",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-11T05:11:20.860Z",
+      "schemaData": [
+        {
+          "attribute": "PolicyNumber",
+          "description": "This is a Policy Number",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        },
+        {
+          "attribute": "PolicyEffectiveDate",
+          "description": "Policy Effective Date in YYYY/MM/DD format",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        },
+        {
+          "attribute": "PolicyExpirationDate",
+          "description": "",
+          "isUiSchema": true,
+          "uiType": "table"
+        },
+        {
+          "attribute": "CancellationDate",
+          "description": "Cancellation Date in which the policy should be cancelled",
+          "isUiSchema": true,
+          "uiType": "form"
+        },
+        {
+          "attribute": "Producer",
+          "description": "Producer name and address",
+          "isUiSchema": false,
+          "uiType": "Select UI Schema"
+        },
+        {
+          "attribute": "InsuredName",
+          "description": "Insured Person Name",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        },
+        {
+          "attribute": "PolicyType",
+          "description": "The Product Name or Type",
+          "isUiSchema": true,
+          "uiType": "form"
+        },
+        {
+          "attribute": "PropertyAddress",
+          "description": "The address of the property associated with the insurance policy",
+          "isUiSchema": true,
+          "uiType": "form"
+        },
+        {
+          "attribute": "VIN",
+          "description": "Vehicle Identification Number",
+          "isUiSchema": false,
+          "uiType": "table"
+        },
+        {
+          "attribute": "GaragingAddress",
+          "description": "The address where the vehicle is parked",
+          "isUiSchema": false,
+          "uiType": "table"
+        },
+        {
+          "attribute": "ProducerCode",
+          "description": "Producer Code",
+          "isUiSchema": true,
+          "uiType": "form"
+        },
+        {
+          "attribute": "ProducerName",
+          "description": "Producer Name",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        }
+      ]
+    },
+    {
+      "id": "schema1697008715990",
       "name": "",
       "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T07:15:36.162Z",
+      "creationDate": "2023-10-11T07:18:37.242Z",
       "schemaData": [
         {
           "attribute": "",
@@ -209,18 +519,162 @@
   ],
   "prompts": [
     {
-      "id": "prompt20231012-121157",
-      "name": "fsd",
+      "id": "prompt1696852318844",
+      "name": "Cancellation_Request_Prompt",
       "createdBy": "Sunny Kumar",
-      "creationDate": "2023-10-12T06:41:57.604Z",
+      "creationDate": "2023-10-09T11:52:33.724Z",
       "promptData": {
-        "systemMessage": "fdsf",
-        "humanMessage": "fsdfs",
-        "inputVariables": "fdsfs"
-      },
-      "attachedSchema": []
+        "systemMessage": " \"You are expert in understanding JSON document and extracting requested information from that\",\n    \"Ensure that this output is in strict json format\",\n    \"If you don't know the answer for any properties/attributes then say 'NA' for that\",\n    \"Ensure that this Extraction is in strict json format\",\n    \"Do not generate answers that don't use the context information\",\n    \"Don’t justify your answers.\"",
+        "humanMessage": "\"The input JSON document is provided in the delimited triple backticks\",\n    \" ```{document_text}``` \",\n    \"From the input JSON Document, extract data elements listed in the following JSON Schema\",\n    \"< {schema} >\"",
+        "inputVariables": "\"document_text\",\n    \"schema\""
+      }
+    },
+    {
+      "id": "prompt1696852414828",
+      "name": "Insurance_Application_Prompt",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-09T11:54:11.033Z",
+      "promptData": {
+        "systemMessage": "\"You are assistant for extracting data from Document\",\n      \"The document text is provided in the delimited triple backticks\",\n      \"You need to extract the data from the document as per the Schema given in the angle bracket \",\n      \"< {schema} >\",\n      \"Respond in as a RFC8259 compliant/strict json object format\",\n      \"Ensure that this Extraction is in strict json format\",\n      \"If you don't know the answer for any properties/attributes then say 'NA' for that\",\n      \"Do not generate answers that don't use the context information\",\n      \"Don’t justify your answers.\"",
+        "humanMessage": "\"The document text is ```{document_text}```. \"",
+        "inputVariables": " \"document_text\",\n      \"schema\""
+      }
+    },
+    {
+      "id": "prompt1696852519401",
+      "name": "Mortgage_Detaisl_Prompt",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-09T11:55:54.930Z",
+      "promptData": {
+        "systemMessage": " \"You are expert in understanding extracting details from text \",\n      \"Ensure that this output is in strict json format\",\n      \"If you don't know the answer for any properties/attributes then say 'NA' for that\",\n      \"Do not generate answers that don't use the context information\",\n      \"Don’t justify your answers.\"",
+        "humanMessage": "\"The input JSON document is provided in the delimited triple backticks\",\n      \" ```{document_text}``` \",\n      \"From the input JSON Document, extract data elements listed in the following JSON Schema\",\n      \"< {schema} >\"",
+        "inputVariables": " \"document_text\",\n      \"schema\""
+      }
+    },
+    {
+      "id": "prompt1696995855165",
+      "name": "Claim Document",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-11T03:45:52.674Z",
+      "promptData": {
+        "systemMessage": "This is the system message.",
+        "humanMessage": "This is the human messaeg",
+        "inputVariables": "claim, insurance"
+      }
+    },
+    {
+      "id": "prompt1697000515762",
+      "name": "hdfhjdh",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-11T05:11:44.500Z",
+      "promptData": {
+        "systemMessage": "",
+        "humanMessage": "",
+        "inputVariables": ""
+      }
+    },
+    {
+      "id": "prompt1697008710968",
+      "name": "",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-11T07:18:39.016Z",
+      "promptData": {
+        "systemMessage": "",
+        "humanMessage": "",
+        "inputVariables": ""
+      }
     }
   ],
-  "scripts": {},
-  "documents": {}
+  "scripts": [
+    {
+      "id": "script1696852318844",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-09T11:53:31.776Z",
+      "scriptData": [
+        {
+          "stepName": "Cancellation_Request_Step",
+          "scriptType": "llm",
+          "scriptTypeInputValue": "Insurance Application Prompt 01"
+        },
+        {
+          "stepName": "Signature_History_Step",
+          "scriptType": "llm",
+          "scriptTypeInputValue": "Cancellation Prompt 02"
+        },
+        {
+          "stepName": "Signature_Details_Step",
+          "scriptType": "llm",
+          "scriptTypeInputValue": "Prompt 03"
+        }
+      ]
+    },
+    {
+      "id": "script1696852414828",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-09T11:55:16.305Z",
+      "scriptData": [
+        {
+          "stepName": "Insurance_Application_Step",
+          "scriptType": "llm",
+          "scriptTypeInputValue": "Prompt 04"
+        },
+        {
+          "stepName": "Signature_History_Step",
+          "scriptType": "llm",
+          "scriptTypeInputValue": "Prompt 03"
+        },
+        {
+          "stepName": "Signature_Details_Step",
+          "scriptType": "llm",
+          "scriptTypeInputValue": "Cancellation Prompt 02"
+        }
+      ]
+    },
+    {
+      "id": "script1696852519401",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-09T11:56:19.258Z",
+      "scriptData": [
+        {
+          "stepName": "Mortgage_Endorsement_Step",
+          "scriptType": "llm",
+          "scriptTypeInputValue": "Prompt 03"
+        },
+        {
+          "stepName": "",
+          "scriptType": "Select Script Type",
+          "scriptTypeInputValue": ""
+        }
+      ]
+    },
+    {
+      "id": "script1696995855165",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-11T03:46:29.533Z",
+      "scriptData": [
+        {
+          "stepName": "Claim_Settlement",
+          "scriptType": "llm",
+          "scriptTypeInputValue": "Cancellation_Request_Prompt"
+        },
+        {
+          "stepName": "Second Signature",
+          "scriptType": "function",
+          "scriptTypeInputValue": "Custom Function"
+        }
+      ]
+    },
+    {
+      "id": "script1697000515762",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-11T05:15:54.744Z",
+      "scriptData": [
+        {
+          "stepName": "",
+          "scriptType": "llm",
+          "scriptTypeInputValue": "Default LLM Value"
+        }
+      ]
+    }
+  ]
 }
