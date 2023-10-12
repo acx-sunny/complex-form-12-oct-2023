@@ -9,7 +9,7 @@ import { ThreeForthSharedPromptComponent } from './three-forth-shared-prompt/thr
 import { ThreeFifthScriptComponent } from './three-fifth-script/three-fifth-script.component';
 import { ThreeSixthSharedScriptComponent } from './three-sixth-shared-script/three-sixth-shared-script.component';
 import { ThreeSeventhDocumentComponent } from './three-seventh-document/three-seventh-document.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,9 +21,6 @@ import { ThreeSeventhDocumentComponent } from './three-seventh-document/three-se
     ThreeSixthSharedScriptComponent,
     ThreeSeventhDocumentComponent,
   ],
-  imports: [
-    CommonModule,
-    TestThreeRoutingModule
-  ]
+  imports: [CommonModule, TestThreeRoutingModule, ReactiveFormsModule],
 })
-export class TestThreeModule { }
+export class TestThreeModule {}
