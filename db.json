@@ -1,0 +1,53 @@
+{
+  "schemas": [
+    {
+      "id": "schema20231012-115826",
+      "name": "fsdfsfsfd",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T06:28:26.539Z",
+      "schemaData": [
+        {
+          "attribute": "fdsfs",
+          "description": "fsdfs",
+          "isUiSchema": true,
+          "uiType": "form"
+        }
+      ]
+    },
+    {
+      "id": "schema20231012-115850",
+      "name": "fsfs",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T06:28:50.437Z",
+      "schemaData": [
+        {
+          "attribute": "fsfd",
+          "description": "dsfsd",
+          "isUiSchema": true,
+          "uiType": "form"
+        },
+        {
+          "attribute": "fsfd",
+          "description": "dfsfs",
+          "isUiSchema": true,
+          "uiType": "form"
+        },
+        {
+          "attribute": "fsdfs",
+          "description": "dsfd",
+          "isUiSchema": true,
+          "uiType": "table"
+        },
+        {
+          "attribute": "dfsd",
+          "description": "fsfs",
+          "isUiSchema": false,
+          "uiType": "Select UI Schema"
+        }
+      ]
+    }
+  ],
+  "prompts": [],
+  "scripts": {},
+  "documents": {}
+}

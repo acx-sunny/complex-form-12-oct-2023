@@ -1,0 +1,79 @@
+<!-- schema form -->
+<div class="form-container container pb-5">
+  <form (ngSubmit)="onSchemaSubmit()" [formGroup]="schemaForm">
+    <!-- Label and Input for schema Name -->
+    <div class="row pb-2">
+      <div class="col-12 col-md-3">
+        <div class="label fw-medium">Schema Name:</div>
+      </div>
+      <div class="col-12 col-md-9">
+        <div class="inputbox">
+          <input type="text" class="form-control" placeholder="Enter Schema Name" formControlName="schemaName" />
+        </div>
+      </div>
+    </div>
+
+    <!-- table -->
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th class="col">#</th>
+            <th class="col-3">attribute</th>
+            <th class="col-5">description</th>
+            <th class="col-1">isUiSchema</th>
+            <th class="col-3">uiType</th>
+            <th class="col-1">action</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider" formArrayName="attDescArray">
+          <tr *ngFor="let item of attDescArray.controls; let i = index" [formGroupName]="i">
+            <!-- serial -->
+            <td class="col">{{ i + 1 }}</td>
+            <!-- attribute -->
+            <td class="col-3">
+              <input type="text" class="form-control" placeholder="Enter Attribute Name" formControlName="attribute" />
+            </td>
+            <!-- description -->
+            <td class="col-5">
+              <textarea class="form-control" placeholder="Enter Description" id="floatingTextarea2"
+                style="height: 100px" formControlName="description" appTextareaAutoResize></textarea>
+            </td>
+            <!-- isUiSchema -->
+            <td class="col-1">
+              <div class="form-check d-flex justify-content-center align-items-center">
+                <input class="form-check-input" type="checkbox" value="text" formControlName="isUiSchema" />
+              </div>
+            </td>
+            <!-- uitype -->
+            <td class="col-3">
+              <select class="form-select" aria-label="Default select example" formControlName="uiType">
+                <option selected disabled>Select UI Schema</option>
+                <option value="textbox">Textbox</option>
+                <option value="form">Form</option>
+                <option value="table">Table</option>
+              </select>
+            </td>
+            <!-- action -->
+            <td class="col-1">
+              <div class="button btn btn-danger" (click)="deleteAttDescField(i)">
+                delete
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- add more fields btn-->
+    <button type="button" class="btn btn-primary" (click)="addNewSchemaAttDescField()">
+      Add More Fields
+    </button>
+
+    <!-- button for the current component -->
+    <div class="submit-button d-flex justify-content-center">
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+
+  </form>
+</div>
