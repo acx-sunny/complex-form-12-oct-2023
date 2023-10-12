@@ -10,6 +10,7 @@ import { ThreeFifthScriptComponent } from './three-fifth-script/three-fifth-scri
 import { ThreeSixthSharedScriptComponent } from './three-sixth-shared-script/three-sixth-shared-script.component';
 import { ThreeSeventhDocumentComponent } from './three-seventh-document/three-seventh-document.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MultipleModalsComponent } from './multiple-modals/multiple-modals.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ThreeFifthScriptComponent,
     ThreeSixthSharedScriptComponent,
     ThreeSeventhDocumentComponent,
+    MultipleModalsComponent
   ],
   imports: [CommonModule, TestThreeRoutingModule, ReactiveFormsModule],
 })

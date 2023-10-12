@@ -1,0 +1,57 @@
+<!-- first modal button -->
+<button type="button" class="btn btn-primary" (click)="isModalFirstOpen = true">
+  First
+</button>
+
+<!-- second modal button -->
+<button type="button" class="btn btn-primary" (click)="isModalSecondOpen = true">
+  Second
+</button>
+
+<!-- models  -->
+
+<div class="position-relative">
+  <!-- first modal  -->
+  <div [ngStyle]="{'opacity': isModalFirstOpen ? 1 : 0, 'transition': 'opacity 0.5s'}" class="position-absolute z-0">
+    <div class="bg-secondary">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorum eligendi placeat ducimus doloremque
+        asperiores inventore expedita provident atque non, tenetur quibusdam et id repudiandae, eaque voluptatem
+        exercitationem labore similique?
+        Veniam, laudantium cupiditate autem magnam libero ratione tempore, maxime praesentium nostrum neque voluptatem
+        dicta! Voluptatibus vitae enim tempore laborum reiciendis. At eum et in! Debitis dolore quo sapiente! Officia,
+        ratione!
+        Beatae, rerum distinctio voluptatibus rem eaque similique odio ut enim aspernatur esse ullam, atque libero id
+        cupiditate quae eligendi iusto voluptatem magni tempore! Libero consequatur ducimus harum magnam non obcaecati?
+        Debitis tempora nesciunt nostrum deserunt, explicabo accusamus expedita praesentium, nobis nemo voluptas
+        repudiandae alias est recusandae dolores ullam laboriosam at enim repellendus esse ipsam earum tempore pariatur
+        officiis. Adipisci, dolorum?
+        Voluptas, eum saepe! Optio praesentium porro laudantium soluta perferendis debitis ipsa aut excepturi
+        repellendus
+        a dolores saepe error dignissimos mollitia atque aliquid veniam aliquam, eveniet natus cum voluptatem eos sit?
+      </p>
+      <button type="button" (click)="isModalFirstOpen = false" class="btn btn-info">close first</button>
+    </div>
+
+  </div>
+  <!-- second modal  -->
+  <div [ngStyle]="{'opacity': isModalSecondOpen ? 1 : 0, 'transition': 'opacity 0.5s'}" class="position-absolute z-1">
+    <div class="bg-warning">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorum eligendi placeat ducimus doloremque
+        asperiores inventore expedita provident atque non, tenetur quibusdam et id repudiandae, eaque voluptatem
+        exercitationem labore similique?
+        Veniam, laudantium cupiditate autem magnam libero ratione tempore, maxime praesentium nostrum neque voluptatem
+        dicta! Voluptatibus vitae enim tempore laborum reiciendis. At eum et in! Debitis dolore quo sapiente! Officia,
+        ratione!
+        Beatae, rerum distinctio voluptatibus rem eaque similique odio ut enim aspernatur esse ullam, atque libero id
+        cupiditate quae eligendi iusto voluptatem magni tempore! Libero consequatur ducimus harum magnam non obcaecati?
+        Debitis tempora nesciunt nostrum deserunt, explicabo accusamus expedita praesentium, nobis nemo voluptas
+        repudiandae alias est recusandae dolores ullam laboriosam at enim repellendus esse ipsam earum tempore pariatur
+        officiis. Adipisci, dolorum?
+      </p>
+      <button type="button" (click)="isModalSecondOpen = false" class="btn btn-info">close second</button>
+    </div>
+
+  </div>
+</div>

@@ -7,6 +7,7 @@ import { ThreeForthSharedPromptComponent } from './three-forth-shared-prompt/thr
 import { ThreeFifthScriptComponent } from './three-fifth-script/three-fifth-script.component';
 import { ThreeSixthSharedScriptComponent } from './three-sixth-shared-script/three-sixth-shared-script.component';
 import { ThreeSeventhDocumentComponent } from './three-seventh-document/three-seventh-document.component';
+import { MultipleModalsComponent } from './multiple-modals/multiple-modals.component';
 
 const routes: Routes = [
   { path: 'schema', component: ThreeOneSchemaComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'script', component: ThreeFifthScriptComponent },
   { path: 'shared-script', component: ThreeSixthSharedScriptComponent },
   { path: 'document', component: ThreeSeventhDocumentComponent },
+  { path: 'modals', component: MultipleModalsComponent },
 ];
 
 @NgModule({
