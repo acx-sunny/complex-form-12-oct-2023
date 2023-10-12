@@ -70,9 +70,13 @@
       Add More Fields
     </button>
 
-    <!-- button for the current component -->
-    <div class="submit-button d-flex justify-content-center">
-      <button type="submit" class="btn btn-success">Submit</button>
+    <div class="d-flex justify-content-center">
+      <!-- button for the current component -->
+      <button type="submit" class="btn btn-success" *ngIf="url==='one/schema' ">Submit</button>
+      <!-- button for the promtp components -->
+      <button type="submit" class="btn btn-success" *ngIf="url!=='one/schema'" data-bs-toggle="modal"
+        data-bs-target="#secondModalForCreatingNewSchemaForm">Submit Not Schema</button>
+
     </div>
 
   </form>

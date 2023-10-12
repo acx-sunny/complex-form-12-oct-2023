@@ -23,7 +23,8 @@ export class FirstSchemaComponent implements OnInit {
   constructor(
     private _schemaService: SchemasService,
     private formBuilder: FormBuilder,
-    private _generateUniqueID: GenerateUniqueIdService
+    private _generateUniqueID: GenerateUniqueIdService,
+    private router : Router
   ) {}
 
   schemaForm: FormGroup = new FormGroup({});
@@ -32,9 +33,12 @@ export class FirstSchemaComponent implements OnInit {
 
   schemaData: localSchemaInterface[] = [];
 
+  url: string = '';
+
   ngOnInit() {
     console.log('new schema init');
     this.createSchemaForm();
+    this.url = this.router.url;
   }
 
   createSchemaForm() {

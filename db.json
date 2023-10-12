@@ -45,9 +45,182 @@
           "uiType": "Select UI Schema"
         }
       ]
+    },
+    {
+      "id": "schema20231012-121153",
+      "name": "fdsfs",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T06:41:53.989Z",
+      "schemaData": [
+        {
+          "attribute": "fsd",
+          "description": "fsdfs",
+          "isUiSchema": true,
+          "uiType": "form"
+        },
+        {
+          "attribute": "fsdfs",
+          "description": "fsfs",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        }
+      ]
+    },
+    {
+      "id": "schema20231012-123938",
+      "name": "fdsf",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T07:09:38.636Z",
+      "schemaData": [
+        {
+          "attribute": "fs",
+          "description": "fsd",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        }
+      ]
+    },
+    {
+      "id": "schema20231012-123939",
+      "name": "fdsf",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T07:09:39.467Z",
+      "schemaData": [
+        {
+          "attribute": "fs",
+          "description": "fsd",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        }
+      ]
+    },
+    {
+      "id": "schema20231012-123941",
+      "name": "fdsf",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T07:09:41.266Z",
+      "schemaData": [
+        {
+          "attribute": "fs",
+          "description": "fsd",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        }
+      ]
+    },
+    {
+      "id": "schema20231012-123942",
+      "name": "fdsf",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T07:09:42.153Z",
+      "schemaData": [
+        {
+          "attribute": "fs",
+          "description": "fsd",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        }
+      ]
+    },
+    {
+      "id": "schema20231012-123943",
+      "name": "fdsf",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T07:09:43.715Z",
+      "schemaData": [
+        {
+          "attribute": "fs",
+          "description": "fsd",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        }
+      ]
+    },
+    {
+      "id": "schema20231012-123944",
+      "name": "fdsf",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T07:09:44.580Z",
+      "schemaData": [
+        {
+          "attribute": "fs",
+          "description": "fsd",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        }
+      ]
+    },
+    {
+      "id": "schema20231012-123945",
+      "name": "fdsf",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T07:09:45.842Z",
+      "schemaData": [
+        {
+          "attribute": "fs",
+          "description": "fsd",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        }
+      ]
+    },
+    {
+      "id": "schema20231012-123946",
+      "name": "fdsf",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T07:09:46.635Z",
+      "schemaData": [
+        {
+          "attribute": "fs",
+          "description": "fsd",
+          "isUiSchema": true,
+          "uiType": "textbox"
+        }
+      ]
+    },
+    {
+      "id": "schema20231012-124535",
+      "name": "",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T07:15:35.227Z",
+      "schemaData": [
+        {
+          "attribute": "",
+          "description": "",
+          "isUiSchema": false,
+          "uiType": "Select UI Schema"
+        }
+      ]
+    },
+    {
+      "id": "schema20231012-124536",
+      "name": "",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T07:15:36.162Z",
+      "schemaData": [
+        {
+          "attribute": "",
+          "description": "",
+          "isUiSchema": false,
+          "uiType": "Select UI Schema"
+        }
+      ]
     }
   ],
-  "prompts": [],
+  "prompts": [
+    {
+      "id": "prompt20231012-121157",
+      "name": "fsd",
+      "createdBy": "Sunny Kumar",
+      "creationDate": "2023-10-12T06:41:57.604Z",
+      "promptData": {
+        "systemMessage": "fdsf",
+        "humanMessage": "fsdfs",
+        "inputVariables": "fdsfs"
+      },
+      "attachedSchema": []
+    }
+  ],
   "scripts": {},
   "documents": {}
 }
