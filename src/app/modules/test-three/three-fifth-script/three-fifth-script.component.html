@@ -1,9 +1,5 @@
 <p>three-fifth-script works!</p>
 
-<p>three-forth-shared-prompt works!</p>
-
-<p class="fs-2 text-primary">three-three-prompt works!</p>
-
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#first">
     Call Component 1 Schema
@@ -98,4 +94,75 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="form-container container">
+    <div class="fw-bold py-2">Create Script</div>
+
+    <form (ngSubmit)="onScriptSubmit()" [formGroup]="scriptForm">
+        <div formArrayName="scriptArrayForTypeInput">
+            <div *ngFor="let item of scriptArrayForTypeInput.controls; let i = index" [formGroupName]="i">
+                <div class="row pb-2">
+                    <div class="col-12 col-md-3">
+                        <div class="label fw-medium">Step Name:</div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="inputbox">
+                            <input type="text" class="form-control" placeholder="Enter Step Name"
+                                formControlName="stepName" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pb-2">
+                    <div class="col-12 col-md-3">
+                        <div class="label fw-medium">Script Type:</div>
+                    </div>
+
+                    <div class="col-12 col-md-9">
+                        <div class="inputbox">
+                            <select name="scriptType" class="form-select" formControlName="scriptType">
+                                <option value="Select Script Type" disabled>Select Script Type</option>
+                                <option value="llm">Invoke LLM</option>
+                                <option value="function">Custom Function</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pb-2">
+                    <div class="col-12 col-md-3">
+                        <div class="label fw-medium">Script Input Variable:</div>
+                    </div>
+
+                    <div class="col-12 col-md-9">
+                        <div class="inputbox">
+                            <div *ngIf="item.get('scriptType')?.value === 'llm'">
+                                <select name="scriptType" class="form-select" formControlName="scriptTypeInputValue">
+                                    <option value="Default LLM Value" disabled>Select Prompt</option>
+                                    <option *ngFor="let prompt of availablePromptArray" [value]="prompt.name">{{
+                                        prompt.name }}
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div *ngIf="item.get('scriptType')?.value !== 'llm'">
+                                <input type="text" class="form-control" placeholder="Enter Custom Function Name"
+                                    formControlName="scriptTypeInputValue" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more field button -->
+        <button type="button" class="btn btn-primary" (click)="addNewScriptField()">Add More Field</button>
+
+        <!-- Submit and Cancel Buttons -->
+        <div class="submit-button d-flex justify-content-center gap-3">
+            <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#scriptModelIndex"
+                data-bs-dismiss="modal">Submit</button>
+        </div>
+    </form>
 </div>
