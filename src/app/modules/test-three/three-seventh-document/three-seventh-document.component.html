@@ -124,3 +124,89 @@
         </div>
     </div>
 </div>
+
+
+<!-- document type form -->
+<div class="form-container container">
+    <form (ngSubmit)="onDocumentSubmit()" [formGroup]="documentForm">
+        <!-- Label and Input for Document Name -->
+        <div class="row pb-2">
+            <div class="col-12 col-md-3">
+                <div class="label fw-medium">Document Name:</div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="inputbox">
+                    <input type="email" class="form-control" placeholder="Enter Document Name" formControlName="name" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Label and Input for Phrase Matcher -->
+        <div class="row pb-2">
+            <div class="col-12 col-md-3">
+                <div class="label fw-medium">Phrase Matcher:</div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="inputbox">
+                    <input type="email" class="form-control" placeholder="Enter Phrase Matcher"
+                        formControlName="phraseMatcher" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Label and Checkboxes for Document Type -->
+        <div class="row pb-2">
+            <div class="col-12 col-md-3">
+                <div class="label fw-medium">Document Type:</div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="inputbox">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" formControlName="isText" />
+                        <label class="form-check-label">Text</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" formControlName="isForm" />
+                        <label class="form-check-label">Form</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" formControlName="isTable" />
+                        <label class="form-check-label">Table</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Label and Textarea for Document Description -->
+        <div class="row pb-2">
+            <div class="col-12 col-md-3">
+                <div class="label fw-medium">Document Description:</div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="inputbox">
+                    <textarea class="form-control" placeholder="Enter Document Description" style="height: 100px"
+                        formControlName="description" appTextareaAutoResize></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Label and Textarea for Document Description -->
+        <div class="row pb-2">
+            <div class="col-12 col-md-3">
+                <div class="label fw-medium">Select Script:</div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="inputbox">
+                    <app-three-sixth-shared-script></app-three-sixth-shared-script>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="d-flex justify-content-center py-3">
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+
+    </form>
+
+</div>
