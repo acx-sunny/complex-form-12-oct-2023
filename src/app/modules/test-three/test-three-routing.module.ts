@@ -8,6 +8,8 @@ import { ThreeFifthScriptComponent } from './three-fifth-script/three-fifth-scri
 import { ThreeSixthSharedScriptComponent } from './three-sixth-shared-script/three-sixth-shared-script.component';
 import { ThreeSeventhDocumentComponent } from './three-seventh-document/three-seventh-document.component';
 import { MultipleModalsComponent } from './multiple-modals/multiple-modals.component';
+import { AppModalComponent } from './app-modal/app-modal.component';
+import { AppParentComponent } from './app-parent/app-parent.component';
 
 const routes: Routes = [
   { path: 'schema', component: ThreeOneSchemaComponent },
@@ -18,6 +20,8 @@ const routes: Routes = [
   { path: 'shared-script', component: ThreeSixthSharedScriptComponent },
   { path: 'document', component: ThreeSeventhDocumentComponent },
   { path: 'modals', component: MultipleModalsComponent },
+  { path: 'appmodal', component: AppModalComponent },
+  { path: 'appparent', component: AppParentComponent },
 ];
 
 @NgModule({
